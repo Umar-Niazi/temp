@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        fieldset{
+            
+            margin-top: 5%;
+            border-radius: 8px;
+            border-color: blueviolet;
+        }
+        .box{
+            width:250px;
+            height:500px;
+            margin:0 auto;
+            margin-top: 5%;
+        }
+        .innerBox{
+            border-color: greenyellow;
+        }
+        .formGap input, .formGap label{
+            margin-top:3px;
+            
+        }
+        label{
+            display: inline-block;
+            font-size: 14px;
+            color: black;
+            background-color: beige;
+            border-radius: 3px;
+        }
+    </style>
+    <title>Task 5</title>
+</head>
+<body>
+    <fieldset class="box">
+        <form align="center" class="formGap">
+            <fieldset class="innerBox">
+                <legend>Personal Info</legend>
+                <input type="text" placeholder="Enter your full name" name="fname"><br>
+                <input type="email" placeholder="Enter your email" name="fname"><br>
+                <input type="password" placeholder="Password" name="password"><br>
+                <input type="phone" placeholder="Phone" name="phone"><br>
+                <input list="cities" name="city" id="city" placeholder="Select your city">
+                <datalist id="cities">
+                    <option value="Islamabad">
+                    <option value="Rawalpindi">
+                    <option value="Lahore">
+                    <option value="Karachi">
+                </datalist><br>
+                <input type="date" placeholder="DOB" name="dob"><br>
+                <label><input type="radio" name="gender" value="Male">Male</label>
+                <label><input type="radio" name="gender" value="Female">Female</label>
+                <label><input type="radio" name="gender" value="Other">Other</label>
+                <br>
+            </fieldset>
+            <fieldset class="innerBox">
+                <legend>Qualifications</legend>
+                <input list="fields" name="" id="field" placeholder="Select your field">
+                <datalist id="fields">
+                    <option value="IT">
+                    <option value="HR">
+                    <option value="Finance">
+                    <option value="Sales">
+                </datalist><br><br>
+                <label>Upload CV <input type="file" name="fileUpload"></label>
+                <br><br>
+                <textarea placeholder="Say something about yourself..." name="description" rows="4" cols="45"></textarea>
+            </fieldset>
+            <br>
+            <button>Register</button>
+        </form>
+    </fieldset>
+
+</body>
+</html>
